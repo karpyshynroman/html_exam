@@ -1,0 +1,16 @@
+@import "reset";
+@import "people";
+@import "person";
+
+@media screen and (min-width: 1000px) {
+  .people {
+    grid-template-columns: 1fr 220px 220px 220px 220px 1fr;
+    grid-template-areas: ". list list list list .";
+
+    &__list {
+      grid-template-columns: repeat(4, 220px);
+    }
+  }
+}
+
+
